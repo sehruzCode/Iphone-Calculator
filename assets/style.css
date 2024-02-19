@@ -1,0 +1,83 @@
+@import url(./Open\ 24\ Display\ St.ttf);
+@font-face {
+    font-family: 'font-31072';
+    font-style: normal;
+    font-weight: normal;
+    src: url('./Open\ 24\ Display\ St.ttf') format('woff');
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.con{
+    width: 310px;
+    height: 640px;
+    margin: 40px auto;
+    background-color: rgb(19, 19, 19);
+    border-radius: 50px;
+    overflow: hidden;
+    position: relative;
+    font-family:'font-31072' !important;
+}
+body{
+    background-color: antiquewhite;
+}
+.tel{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background-position: center;
+    background-size: cover;
+    background-image: url(./61d2f7b092b57c0004c64744.png);
+}
+.text{
+    width: 100%;
+    height: 30%;
+    color: white;
+    display: flex;
+    align-items: end;
+    justify-content: end;
+    font-size: 80px;
+    padding-right: 20px;
+}
+
+.buttons{
+    width: 100%;
+    height: 70%;
+    display: grid;
+    gap: 7px;
+    justify-content: center;
+    align-content: center;
+    grid-template-columns: repeat(4, calc(310px / 4 - 17px));
+    grid-template-rows: repeat(5, 59px);
+    
+}
+.zero{
+   
+    grid-column-start: 1;
+    grid-column-end: 3;
+}
+
+button{
+    border-radius: 50px;
+    font-size: 25px;
+    border: none;
+    position: relative;
+    z-index: 99;
+    transition: .5s background-color;
+}
+.number{
+    background-color: rgb(84, 84, 84);
+}
+button:not(.number){
+    background-color: orange;
+}
+button:active{
+    background-color: rgba(128, 128, 128, 0.378);
+}
+.c{
+    background-color: rgb(161, 161, 161) !important;
+}
